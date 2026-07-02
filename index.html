@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savitha Sree S | Computer Science Engineer</title>
+  <meta name="description" content="Portfolio of Savitha Sree S – Computer Science Engineer specializing in Java, Python, Web Development, and UI/UX Design. Seeking Web/Software Development opportunities." />
+  <meta name="keywords" content="Savitha Sree S, Computer Science Engineer, Web Developer, Java Developer, Python, UI/UX Designer, Portfolio" />
+  <meta name="author" content="Savitha Sree S" />
+  <meta property="og:title" content="Savitha Sree S | CS Engineer Portfolio" />
+  <meta property="og:description" content="Results-driven CS Engineering student with hands-on experience in Java, Python, Web Development, and UI/UX Design." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="logo-text">Savitha</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="hero-particles"></div>
+    <div class="hero-content">
+      <!-- Circular profile avatar — matching reference style -->
+      <div class="hero-avatar-wrap" id="hero-avatar">
+        <span class="hero-avatar-initials">SS</span>
+      </div>
+
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Opportunities
+      </div>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Savitha Sree S</span>
+      </h1>
+
+      <div class="hero-typewriter">
+        <span id="typewriter-text"></span><span class="cursor">|</span>
+      </div>
+
+      <p class="hero-description">
+        Results-driven Computer Science Engineer with hands-on experience in
+        <strong>Java, Python, Web Development</strong> &amp; <strong>UI/UX Design</strong>.
+        Passionate about building impactful digital solutions.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">
+          <span>View My Work</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+          <span>Get In Touch</span>
+        </a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/savitha-sree-s-031703326/" target="_blank" rel="noopener" class="social-icon" id="hero-linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/savisree1206-lab" target="_blank" rel="noopener" class="social-icon" id="hero-github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+        <a href="mailto:savisree1206@gmail.com" class="social-icon" id="hero-email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who Am I?</h2>
+        <p class="section-subtitle">Passionate engineer, creative problem solver, lifelong learner</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-avatar" id="about-avatar">
+            <div class="avatar-ring ring-1"></div>
+            <div class="avatar-ring ring-2"></div>
+            <div class="avatar-initials">SS</div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card" id="stat-cgpa">
+              <span class="stat-number">8.17</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card" id="stat-projects">
+              <span class="stat-number">8+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card" id="stat-certs">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            I'm a <strong>Computer Science Engineering student</strong> at Kongu Engineering College, Perundurai, 
+            with a strong foundation in database management, frontend development, and problem-solving.
+          </p>
+          <p class="about-text">
+            With hands-on experience in <strong>Java, Python, Web Development, and UI/UX design</strong>, 
+            I enjoy bridging the gap between design and technology — crafting applications that are both 
+            functional and beautiful.
+          </p>
+          <p class="about-text">
+            I'm actively seeking a <strong>Web/Software Development internship</strong> to apply my technical 
+            skills, collaborate with teams, and gain real-world industry exposure.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>8925526055</span>
+            </div>
+            <div class="detail-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>savisree1206@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Perundurai, Tamil Nadu</span>
+            </div>
+            <div class="detail-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>Languages: English, Kannada, Tamil</span>
+            </div>
+          </div>
+          <div class="about-education">
+            <h3>Education</h3>
+            <div class="edu-item">
+              <div class="edu-icon">🎓</div>
+              <div class="edu-info">
+                <strong>B.E. Computer Science Engineering</strong>
+                <span>Kongu Engineering College, Perundurai</span>
+                <span class="edu-meta">CGPA: 8.17</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-icon">🏫</div>
+              <div class="edu-info">
+                <strong>Higher Secondary Education</strong>
+                <span>Saradha Vidhyalaya Matric Hr. Sec. School</span>
+                <span class="edu-meta">Percentage: 90.3%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Skills</span>
+        <h2 class="section-title">My Expertise</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category" id="skill-programming">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="80">C</span>
+            <span class="skill-tag" data-level="75">C++</span>
+            <span class="skill-tag" data-level="85">Java</span>
+            <span class="skill-tag" data-level="80">Python</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-web">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            </div>
+            <h3>Web Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="90">HTML</span>
+            <span class="skill-tag" data-level="85">CSS</span>
+            <span class="skill-tag" data-level="80">JavaScript</span>
+            <span class="skill-tag" data-level="78">Web Development</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-tools">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Tools & Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="85">Figma</span>
+            <span class="skill-tag" data-level="70">Flutter</span>
+            <span class="skill-tag" data-level="80">Git</span>
+            <span class="skill-tag" data-level="80">GitHub</span>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-concepts">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Concepts</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="85">DBMS</span>
+            <span class="skill-tag" data-level="80">OOP</span>
+            <span class="skill-tag" data-level="85">UI/UX Design</span>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+        <p class="section-subtitle">Featured projects — others can be viewed on GitHub</p>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- 1. ClubHub - Club Event Management -->
+        <div class="project-card project-card--featured" id="project-dbms" data-category="web" style="position:relative;cursor:pointer;" onclick="window.location='project.html?id=dbms'">
+          <a href="project.html?id=dbms" class="card-cover-link" aria-label="View ClubHub Club Event Management details"></a>
+          <div class="project-card-top">
+            <div class="project-icon">🎓</div>
+            <div class="project-links">
+              <a href="https://dbms-lemon.vercel.app" target="_blank" rel="noopener" class="project-link-btn" aria-label="Live Demo" style="position:relative;z-index:2" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/savisree1206-lab/dbms" target="_blank" rel="noopener" class="project-link-btn" aria-label="GitHub" style="position:relative;z-index:2" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-badge project-badge--live">🟢 Live</span>
+          <h3 class="project-title">ClubHub — Club Event Management</h3>
+          <p class="project-type">Full Stack Web Application · Deployed on Vercel</p>
+
+          <!-- Screenshot Carousel -->
+          <div class="project-carousel" id="carousel-dbms" style="position:relative;z-index:2;" onclick="event.stopPropagation()">
+            <div class="carousel-track" id="carousel-track-dbms">
+              <img src="screenshots/dbms_1_landing.png" alt="ClubHub Authentication Portal" class="carousel-slide" loading="lazy" />
+              <img src="screenshots/dbms_2_student_home.png" alt="Student Dashboard — Explore Events" class="carousel-slide" loading="lazy" />
+              <img src="screenshots/dbms_3_events.png" alt="Campus Events Listing" class="carousel-slide" loading="lazy" />
+              <img src="screenshots/dbms_4_admin.png" alt="Club Admin Panel — CSI Management" class="carousel-slide" loading="lazy" />
+              <img src="screenshots/dbms_5_create_event.png" alt="Create New Event Form" class="carousel-slide" loading="lazy" />
+            </div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous screenshot" onclick="event.stopPropagation();moveCarousel('dbms',-1)">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next screenshot" onclick="event.stopPropagation();moveCarousel('dbms',1)">&#8250;</button>
+            <div class="carousel-dots" id="carousel-dots-dbms">
+              <span class="carousel-dot active" onclick="event.stopPropagation();goToSlide('dbms',0)"></span>
+              <span class="carousel-dot" onclick="event.stopPropagation();goToSlide('dbms',1)"></span>
+              <span class="carousel-dot" onclick="event.stopPropagation();goToSlide('dbms',2)"></span>
+              <span class="carousel-dot" onclick="event.stopPropagation();goToSlide('dbms',3)"></span>
+              <span class="carousel-dot" onclick="event.stopPropagation();goToSlide('dbms',4)"></span>
+            </div>
+          </div>
+
+          <p class="project-description">
+            A full-stack club management platform for <strong>Kongu Engineering College</strong> — built with a DBMS backend. Features dual portals: Students can explore & register for events, join clubs (CSI, IEEE, SDC); Club Admins can create events, approve member requests, and manage club profiles.
+          </p>
+          <div class="project-tags">
+            <span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">DBMS</span>
+            <span class="proj-tag">Full Stack</span>
+            <span class="proj-tag">Vercel</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ Student & Admin dual portals</div>
+            <div class="highlight">✓ Event creation & member approval</div>
+            <div class="highlight">✓ Live deployed on Vercel</div>
+          </div>
+          <a href="project.html?id=dbms" class="card-details-btn" style="position:relative;z-index:2">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <!-- 2. ResQNet -->
+        <div class="project-card project-card--featured" id="project-resqnet" data-category="web" style="position:relative;cursor:pointer;" onclick="window.location='project.html?id=resqnet'">
+          <a href="project.html?id=resqnet" class="card-cover-link" aria-label="View ResQNet details"></a>
+          <div class="project-card-top">
+            <div class="project-icon">🚨</div>
+            <div class="project-links">
+              <a href="https://res-q-net-sigma.vercel.app" target="_blank" rel="noopener" class="project-link-btn" aria-label="Live Demo" style="position:relative;z-index:2" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/savisree1206-lab/resqnet" target="_blank" rel="noopener" class="project-link-btn" aria-label="GitHub" style="position:relative;z-index:2" onclick="event.stopPropagation()">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-badge project-badge--live">🟢 Live</span>
+          
+          <!-- Screenshot Preview -->
+          <div class="project-screenshot-wrap" style="position:relative;z-index:1">
+            <img src="resqnet_hero.png" alt="ResQNet real-time disaster response screenshot" class="project-screenshot" loading="lazy" />
+            <div class="project-screenshot-overlay">
+              <a href="https://res-q-net-sigma.vercel.app" target="_blank" rel="noopener" class="screenshot-visit-btn" style="position:relative;z-index:3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Visit Site
+              </a>
+            </div>
+          </div>
+
+          <h3 class="project-title">ResQNet</h3>
+          <p class="project-type">Real-Time Disaster Response Platform · NDRF</p>
+          <p class="project-description">
+            A real-time disaster information aggregation software designed for the NDRF. Aggregates critical status updates, resource locations, and alerts to empower response teams with actionable insights during emergencies.
+          </p>
+          <div class="project-tags">
+            <span class="proj-tag">React</span>
+            <span class="proj-tag">Leaflet</span>
+            <span class="proj-tag">Vite</span>
+            <span class="proj-tag">Vercel</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ Real-Time Map Visualization</div>
+            <div class="highlight">✓ Multi-lingual (Translate) Integration</div>
+            <div class="highlight">✓ Incident Reporting & Logs</div>
+          </div>
+          <a href="project.html?id=resqnet" class="card-details-btn" style="position:relative;z-index:2">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+        <!-- 3. VentureVibe Travel Website -->
+        <div class="project-card project-card--featured" id="project-travel" data-category="web">
+          <a href="project.html?id=travel" class="card-cover-link" aria-label="View VentureVibe Travel Booking details"></a>
+          <div class="project-card-top">
+            <div class="project-icon">✈️</div>
+            <div class="project-links">
+              <a href="https://fsdmini-frontend.onrender.com" target="_blank" rel="noopener" class="project-link-btn" aria-label="Live Demo" style="position:relative;z-index:2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/savisree1206-lab/fsdmini" target="_blank" rel="noopener" class="project-link-btn" aria-label="GitHub" style="position:relative;z-index:2">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-badge project-badge--live">🟢 Live</span>
+          <!-- Screenshot Preview -->
+          <div class="project-screenshot-wrap" style="position:relative;z-index:1">
+            <img src="venturevibe_hero.png" alt="VentureVibe travel website screenshot" class="project-screenshot" loading="lazy" />
+            <div class="project-screenshot-overlay">
+              <a href="https://fsdmini-frontend.onrender.com" target="_blank" rel="noopener" class="screenshot-visit-btn" style="position:relative;z-index:3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Visit Site
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">VentureVibe — Travel Booking</h3>
+          <p class="project-type">Full Stack Travel Web Application</p>
+          <p class="project-description">
+            A full-stack travel booking portal featuring curated destinations (Bali, Santorini, Swiss Alps, Kyoto) with pricing, ratings, and booking flows. Built with a React frontend deployed on Render.
+          </p>
+          <div class="project-tags">
+            <span class="proj-tag">HTML/CSS/JS</span>
+            <span class="proj-tag">React</span>
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">Render</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ Live Deployed on Render</div>
+            <div class="highlight">✓ Destination Booking Flows</div>
+            <div class="highlight">✓ Responsive Design</div>
+          </div>
+          <a href="project.html?id=travel" class="card-details-btn" style="position:relative;z-index:2">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+      </div>
+
+
+      <!-- GitHub CTA -->
+      <div class="github-cta">
+        <p>View all repositories on GitHub</p>
+        <a href="https://github.com/savisree1206-lab" target="_blank" rel="noopener" class="btn btn-secondary" id="github-all-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          <span>View All on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Certificates Section -->
+  <section id="experience" class="experience section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience & Certifications</span>
+        <h2 class="section-title">My Journey</h2>
+        <p class="section-subtitle">Training, internships, and professional development</p>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-column">
+          <h3 class="exp-col-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            Internship & Training
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item" id="exp-nxtgen">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-company">NxtGen Instruments</div>
+                <div class="timeline-role">Web Development Training</div>
+                <div class="timeline-duration">8 Days</div>
+                <ul class="timeline-list">
+                  <li>Developed responsive web applications</li>
+                  <li>Gained exposure to frontend and backend fundamentals</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-item" id="exp-codebind">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-company">CodeBind Technologies</div>
+                <div class="timeline-role">Web Development Training</div>
+                <div class="timeline-duration">7 Days</div>
+                <ul class="timeline-list">
+                  <li>Built dynamic web pages</li>
+                  <li>Strengthened practical development skills</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="exp-column">
+          <h3 class="exp-col-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Certificates
+          </h3>
+          <div class="cert-cards">
+            <div class="cert-card" id="cert-ibm">
+              <div class="cert-logo">🤖</div>
+              <div class="cert-info">
+                <div class="cert-name">Artificial Intelligence</div>
+                <div class="cert-issuer">IBM</div>
+                <span class="cert-badge">Verified</span>
+              </div>
+            </div>
+            <div class="cert-card" id="cert-nasscom">
+              <div class="cert-logo">🏆</div>
+              <div class="cert-info">
+                <div class="cert-name">NASSCOM Certification</div>
+                <div class="cert-issuer">NASSCOM</div>
+                <span class="cert-badge">Verified</span>
+              </div>
+            </div>
+            <div class="cert-card" id="cert-infosys">
+              <div class="cert-logo">💼</div>
+              <div class="cert-info">
+                <div class="cert-name">Springboard Program</div>
+                <div class="cert-issuer">Infosys</div>
+                <span class="cert-badge">Verified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Open for opportunities, collaborations, and conversations</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+91 8925526055</div>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-email">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">savisree1206@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-linkedin">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/savitha-sree-s-031703326/" target="_blank" rel="noopener" class="contact-value contact-link">linkedin.com/in/savitha-sree-s</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-github">
+            <div class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <a href="https://github.com/savisree1206-lab" target="_blank" rel="noopener" class="contact-value contact-link">github.com/savisree1206-lab</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email-input">Your Email</label>
+              <input type="email" id="contact-email-input" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Internship Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Hi Savitha, I'd love to connect..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div id="form-success" class="form-success" style="display:none;">
+              ✅ Thank you! Message sent successfully.
+            </div>
+            <div id="form-error" class="form-error" style="display:none;">
+              ❌ Something went wrong. Please try again.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">SS</span>
+        <p>Savitha Sree S — Computer Science Engineer</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home" id="footer-home">Home</a>
+        <a href="#about" id="footer-about">About</a>
+        <a href="#skills" id="footer-skills">Skills</a>
+        <a href="#projects" id="footer-projects">Projects</a>
+        <a href="#contact" id="footer-contact">Contact</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/savitha-sree-s-031703326/" target="_blank" rel="noopener" aria-label="LinkedIn" id="footer-linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/savisree1206-lab" target="_blank" rel="noopener" aria-label="GitHub" id="footer-github">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+        </a>
+        <a href="mailto:savisree1206@gmail.com" aria-label="Email" id="footer-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <div class="footer-copy">
+        <p>© 2025 Savitha Sree S. Crafted with ❤️ for excellence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top-btn" class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

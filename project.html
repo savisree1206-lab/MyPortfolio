@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details | Savitha Sree S</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="Project details — Savitha Sree S Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+<body>
+
+  <!-- ═══ TOP BAR ═══════════════════════════════════════════ -->
+  <header class="topbar" id="topbar">
+    <a href="index.html#projects" class="topbar-back" id="topbar-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      <span>Portfolio</span>
+    </a>
+
+    <div class="topbar-center" id="topbar-center">
+      <span class="topbar-label" id="topbar-project-type">Project</span>
+      <h1 class="topbar-title" id="topbar-title">Loading…</h1>
+    </div>
+
+    <div class="topbar-actions" id="topbar-actions">
+      <!-- Populated by JS -->
+    </div>
+  </header>
+
+  <!-- ═══ SLIDESHOW WRAPPER (fills viewport below topbar) ═══ -->
+  <div class="slideshow-wrapper" id="slideshow-wrapper">
+
+    <!-- STAGE: full screenshot area -->
+    <div class="stage" id="stage"
+         aria-label="Project screenshot slideshow"
+         role="region">
+
+      <!-- Layer A (first active) -->
+      <div class="slide-layer is-active" id="layer-a" aria-hidden="false">
+        <div class="slide-bg" id="bg-a"></div>
+        <div class="slide-placeholder" id="ph-a">
+          <div class="ph-inner">
+            <div class="ph-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+              </svg>
+            </div>
+            <p class="ph-label">Screenshot Coming Soon</p>
+            <p class="ph-sub">The user will provide images for this project</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Layer B (inactive, preloaded for crossfade) -->
+      <div class="slide-layer" id="layer-b" aria-hidden="true">
+        <div class="slide-bg" id="bg-b"></div>
+        <div class="slide-placeholder" id="ph-b">
+          <div class="ph-inner">
+            <div class="ph-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                <circle cx="8.5" cy="8.5" r="1.5"/>
+                <polyline points="21 15 16 10 5 21"/>
+              </svg>
+            </div>
+            <p class="ph-label">Screenshot Coming Soon</p>
+            <p class="ph-sub">The user will provide images for this project</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cinematic Vignette Overlays -->
+      <div class="vignette vignette--top"    aria-hidden="true"></div>
+      <div class="vignette vignette--left"   aria-hidden="true"></div>
+      <div class="vignette vignette--bottom" aria-hidden="true"></div>
+      <div class="vignette vignette--right"  aria-hidden="true"></div>
+
+      <!-- Giant Slide Number (cinematic watermark) -->
+      <div class="slide-watermark" id="slide-watermark" aria-hidden="true">01</div>
+
+      <!-- ─── DESCRIPTION PANEL ─────────────────────── -->
+      <aside class="desc-panel" id="desc-panel">
+        <div class="desc-inner">
+          <div class="desc-header">
+            <span class="desc-counter" id="desc-counter">01 / 01</span>
+            <div class="desc-rule"></div>
+          </div>
+
+          <h2 class="desc-title" id="desc-title">Loading…</h2>
+          <p class="desc-caption" id="desc-caption"></p>
+
+          <div class="desc-features" id="desc-features"></div>
+
+          <div class="desc-hint" id="desc-hint">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="10" height="10">
+              <rect x="6" y="4" width="4" height="16" rx="1"/>
+              <rect x="14" y="4" width="4" height="16" rx="1"/>
+            </svg>
+            Hover to pause · ← → to navigate
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /stage -->
+
+    <!-- ─── CONTROL BAR ──────────────────────────── -->
+    <nav class="ctrl-bar" id="ctrl-bar" aria-label="Slideshow controls">
+
+      <button class="ctrl-arrow" id="ctrl-prev" aria-label="Previous slide" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+
+      <div class="ctrl-middle">
+        <div class="ctrl-dots" id="ctrl-dots" role="tablist" aria-label="Slide navigation"></div>
+        <div class="ctrl-progress-track" aria-hidden="true">
+          <div class="ctrl-progress-fill" id="ctrl-progress-fill"></div>
+          <div class="ctrl-progress-timer" id="ctrl-progress-timer"></div>
+        </div>
+      </div>
+
+      <button class="ctrl-arrow" id="ctrl-next" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+
+    </nav><!-- /ctrl-bar -->
+
+  </div><!-- /slideshow-wrapper -->
+
+  <!-- ═══ PROJECT INFO SECTION ══════════════════════════════ -->
+  <section class="info-section" id="info-section">
+    <div class="info-container">
+
+      <div class="info-left">
+        <span class="info-type-badge" id="info-type">Type</span>
+        <h2 class="info-heading" id="info-heading">Project Title</h2>
+        <p class="info-desc" id="info-desc">Description</p>
+        <div class="info-tech" id="info-tech"></div>
+      </div>
+
+      <div class="info-right">
+        <div class="info-card">
+          <h3 class="info-card-title">Key Features</h3>
+          <ul class="info-highlights" id="info-highlights"></ul>
+        </div>
+        <div class="info-card">
+          <h3 class="info-card-title">Project Links</h3>
+          <div class="info-btns" id="info-btns"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Back to portfolio -->
+    <div class="info-back-row">
+      <a href="index.html#projects" class="info-back-btn" id="info-back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to All Projects
+      </a>
+    </div>
+
+  </section>
+
+  <script src="project.js"></script>
+</body>
+</html>
