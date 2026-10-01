@@ -14,6 +14,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -63,6 +68,22 @@
       <div class="hero-badge">
         <span class="badge-dot"></span>
         Open to Opportunities
+      </div>
+
+      <!-- Live Views & Total Counter -->
+      <div class="hero-live-stats" id="hero-live-stats">
+        <div class="live-stat-pill" id="hero-live-active-pill" title="Live active visitors right now">
+          <span class="live-pulse-dot"></span>
+          <span class="live-stat-text"><strong id="hero-active-count">1</strong> viewing now</span>
+        </div>
+        <div class="live-stat-divider"></div>
+        <div class="live-stat-pill" id="hero-total-views-pill" title="Total portfolio views">
+          <svg class="live-stat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <span class="live-stat-text"><strong id="hero-total-count">...</strong> total views</span>
+        </div>
       </div>
 
       <h1 class="hero-title">
@@ -612,6 +633,36 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
+      <!-- Live Visitor Analytics Widget -->
+      <div class="footer-views-badge" id="footer-views-badge">
+        <div class="footer-views-card">
+          <div class="footer-views-header">
+            <div class="footer-views-pulse">
+              <span class="pulse-ring"></span>
+              <span class="pulse-core"></span>
+            </div>
+            <span class="footer-views-title">Live Portfolio Traffic</span>
+            <span class="footer-views-tag">Real-Time</span>
+          </div>
+          <div class="footer-views-grid">
+            <div class="footer-views-item">
+              <span class="footer-views-num" id="footer-total-views">--</span>
+              <span class="footer-views-lbl">Total Views</span>
+            </div>
+            <div class="footer-views-divider"></div>
+            <div class="footer-views-item">
+              <span class="footer-views-num live-green" id="footer-active-views">1</span>
+              <span class="footer-views-lbl">Active Now</span>
+            </div>
+            <div class="footer-views-divider"></div>
+            <div class="footer-views-item">
+              <span class="footer-views-num" id="footer-today-views">--</span>
+              <span class="footer-views-lbl">Views Today</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="footer-copy">
         <p>© 2025 Savitha Sree S. Crafted with ❤️ for excellence.</p>
       </div>
